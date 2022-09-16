@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
@@ -6,11 +9,13 @@
 
 body{
     background: linear-gradient(#3f51b5, #000);
+    font-family: 'Poppins', sans-serif;
 }
 
 .main{
+    /* border: 5px solid red; */
     width: 350px;
-    height: 100vh;
+    /* height: 100%; */
     margin: 0 auto;
     position: relative;
     overflow: hidden;
@@ -33,6 +38,9 @@ body{
 .header p{
     color: #007aff;
     text-align: center;
+    font-family: 'Ms Madi', cursive;
+    font-weight: bold;
+    font-size: 19px;
 }
 
 .main-text{
@@ -43,4 +51,103 @@ body{
 
 .main-text h2{
     margin-bottom: 10px;
+}
+
+.footer-menu{
+    width: 100%;
+    /* position: absolute; */
+    bottom: -10px;
+    padding: 17px 5px;
+    background: #f9f9f9;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.footer-menu a{
+    color: #007aff;
+    margin: 0px 32px;
+    cursor: pointer;
+}
+
+.footer-menu a:hover{
+    color: #002fff;
+}
+
+.footer-menu i:hover{
+    transition: 0.1s;
+    transform: scale(1.2);
+}
+
+.swiper-container{
+    margin-top: 15px;
+    height: 320px;
+}
+
+.swiper-wrapper{
+    align-items: center;
+}
+
+.swiper-slide{
+    border: 1px solid rgba(53, 52, 52, 0.719);
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.swiper-slide img{
+    width: 200px;
+    height: 250px;
+    border-radius: 7px;
+}
+
+.swiper-pagination-{
+    margin-top: 12px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-slide-active{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+
+.info{
+    width: 100%;
+    padding: 8px 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    bottom: 0;
+    text-align: justify;
+    border-radius: 0 0 7px 7px;
+}
+
+.info h3{
+    font-size: 15px;
+    margin-left: 7px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.info p{
+    font-size: 12px;
+    margin-left: 7px;
+    /* font-weight: 100; */
+    color: rgba(255, 255, 255, 0.575);
+}
+
+.info a{
+    color: rgba(255, 255, 255, 0.575);
+    text-decoration: none;
+    float: right;
+    margin-right: 7px;
+    margin-top: -28px;
+    border: 1px solid rgba(255, 255, 255, 0.575);
+    border-radius: 20px;
+    font-size: 13px;
+    padding: 2px 8px;
+}
+
+.info a:hover{
+    color: #fff;
+    transition: 0.3s;
 }

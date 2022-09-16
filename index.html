@@ -1,30 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Touch Slider</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dateme</title>
+  </head>
+  <body>
     <div class="main">
-        <div class="header">
-            <i class="fa-solid fa-bars menu"></i>
-            <p>Choose your date</p>
-            <i class="fa-solid fa-envelope msg"></i>
-        </div>
+      <div class="header">
+        <i class="fa-solid fa-bars menu"></i>
+        <p>Dateme</p>
+        <i class="fa-solid fa-envelope msg"></i>
+      </div>
 
-        <div class="main-text">
-            <h2>Choose your one</h2>
-            <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi repellat voluptates voluptatum similique rerum soluta ipsa, magni nulla modi. Laboriosam cumque quia consequuntur quaerat doloremque at dolor commodi autem, natus adipisci fugit velit in!</small>
-        </div>
+      <div class="main-text">
+        <h2>Choose your date</h2>
+        <small
+          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+          repellat voluptates voluptatum similique rerum soluta ipsa, magni
+          nulla modi. Laboriosam cumque quia consequuntur quaerat doloremque at
+          dolor commodi autem, natus adipisci fugit velit in!</small
+        >
+      </div>
 
-        <div class="footer-menu">
-            
-        </div>
+      <!-- Swiper -->
+      <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/img1.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Mr. H</h3>
+                        <p>XYZ Company</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/img2.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Mr. H</h3>
+                        <p>XYZ Company</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/img3.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Mr. H</h3>
+                        <p>XYZ Company</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/img4.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Mr. H</h3>
+                        <p>XYZ Company</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/img5.jpeg" alt="" />
+                    <div class="info">
+                        <h3>Mr. H</h3>
+                        <p>XYZ Company</p>
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination-"></div>
+        <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+      </div>
 
+      <div class="main-text">
+        <h2>About us</h2>
+        <small
+          >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+          repellat voluptates voluptatum similique rerum soluta ipsa, magni
+          nulla modi. Laboriosam cumque quia consequuntur quaerat doloremque at
+          dolor commodi autem, natus adipisci fugit velit in!</small>
+          <br>
+          <small>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi
+          repellat voluptates voluptatum similique rerum soluta ipsa, magni
+          nulla modi. Laboriosam cumque quia consequuntur quaerat doloremque at
+          dolor commodi autem, natus adipisci fugit velit in!</small>
+      </div>
+
+      <div class="footer-menu">
+        <a href="index.html"><i class="fa-solid fa-house"></i></a>
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="#"><i class="fa-solid fa-user"></i></a>
+        <a href="#"><i class="fa-solid fa-gear"></i></a>
+      </div>
     </div>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+          slidesPerView: 'auto',
+          spaceBetween: 40,
+          centeredSlides: true,
+          grabCursor: true,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination-",
+            clickable: true,
+          },
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+        });
+      </script>
+
+  </body>
 </html>
